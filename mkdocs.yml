@@ -1,0 +1,143 @@
+site_name: My Docs
+nav:
+  - Home: 
+    - index.md
+    - test.md
+    - exemple.md
+
+  - Proxmox:
+      - proxmox/proxmox.md
+  - Debian: 
+      - debian/minidebian.md
+      - debian/installmkdocs.md
+  - Markdown:
+      - markdown/syntax/syntax.md
+      - markdown/syntax/extensions.md
+      - Mkdocs:
+        - Configuration:
+          - markdown/mkdocs-material/configuration/mkdocs.md
+          - markdown/mkdocs-material/configuration/extracss.md
+      - Mermaid:
+        - Exemples:
+          - markdown/mermaid/graph.md
+          - markdown/mermaid/flowchart.md
+          - markdown/mermaid/gitgraph.md
+          - markdown/mermaid/erdiagram.md
+          - markdown/mermaid/gantt.md
+          - markdown/mermaid/journey.md
+          - markdown/mermaid/pie.md
+          - markdown/mermaid/sequencediagram.md
+  - About: about.md
+theme: 
+  #name: readthedocs
+  name: material
+  highlightjs: true
+  hljs_languages:
+    - yaml
+  # titles_only: true
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to system preference
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    # - content.code.select
+    # - content.footnote.tooltips
+    - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.progressbar
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+      toc_depth: 3
+  # - pymdownx.arithmatex:
+  #    generic: true
+  #- pymdownx.betterem:
+  #    smart_enable: all
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      auto_title: true
+  #- pymdownx.magiclink:
+  #    normalize_issue_symbols: true
+  #    repo_url_shorthand: true
+  #    user: squidfunk
+  #    repo: mkdocs-material
+  - pymdownx.snippets
+#      auto_append:
+#        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+plugins:
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - glightbox
+extra_css:
+  - stylesheets/extra.css
