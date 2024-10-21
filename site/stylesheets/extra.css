@@ -1,0 +1,90 @@
+.progress-label {
+    position: absolute;
+    text-align: center;
+    font-weight: 700;
+    width: 100%;
+    margin: 0;
+    line-height: 1.2rem;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 1.2rem;
+    float: left;
+    background-color: #2979ff;
+  }
+  
+  .progress.candystripe-animate .progress-bar {
+      animation: animate-stripes 5s linear infinite;
+  }
+
+  .progress {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+    height: 1.2rem;
+    background-color: #eeeeee;
+    position: relative;
+  }
+  
+  @keyframes animate-stripes {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 4rem 0;
+    }
+  }
+
+  .progress.candystripe .progress-bar {
+      background-size: 1.2rem 1.2rem;
+      background-image:
+        linear-gradient(
+          135deg,
+          hsl(229, 29%, 85%) 27%,
+          transparent 27%,
+          transparent 52%,
+          hsl(229, 29%, 85%) 52%,
+          hsl(229, 29%, 85%) 77%,
+          transparent 77%,
+          transparent
+        );
+    }
+
+  .progress.thin {
+    margin-top: 0.9rem;
+    height: 0.4rem;
+  }
+  
+  .progress.thin .progress-label {
+    margin-top: -0.4rem;
+  }
+  
+  .progress.thin .progress-bar {
+    height: 0.4rem;
+  }
+  
+  .progress-100plus .progress-bar {
+    background-color: #00e676;
+  }
+  
+  .progress-80plus .progress-bar {
+    background-color: #fbc02d;
+  }
+  
+  .progress-60plus .progress-bar {
+    background-color: #ff9100;
+  }
+  
+  .progress-40plus .progress-bar {
+    background-color: #ff5252;
+  }
+  
+  .progress-20plus .progress-bar {
+    background-color: #ff1744;
+  }
+  
+  .progress-0plus .progress-bar {
+    background-color: #f50057;
+  }
