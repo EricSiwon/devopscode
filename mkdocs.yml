@@ -10,6 +10,7 @@ nav:
   - Debian: 
       - debian/minidebian.md
       - debian/installmkdocs.md
+      - debian/githubpages.md
   - Markdown:
       - markdown/syntax/syntax.md
       - markdown/syntax/extensions.md

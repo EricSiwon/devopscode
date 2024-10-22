@@ -1,0 +1,80 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
+then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+export PATH
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+export TMOUT=604800
+
+# ------------------------
+
+set-window-title() {
+  #echo -en "\033]0;$(pwd | sed -e "s;^$HOME;~;")\a"
+  echo -en "\033]0;$(pwd | sed -e "s;^/home/tsan2/appli/;~;")\a"
+}
+
+if [[ "$PROMPT_COMMAND" ]]; then
+  export PROMPT_COMMAND="$PROMPT_COMMAND;set-window-title"
+else
+  export PROMPT_COMMAND=set-window-title
+fi
+
+MyVM="VM3"
+
+S3_DEV="https://s3.unix-int.intra-int.bdf-int.local"
+S3_PRD="https://s3auto-api.pr01.stocobj.app.private"
+
+# ------------------------
+
+alias ltr='ls -ltr'
+alias histgit='history|grep git'
+alias hists3='history|grep s3'
+alias hist='history'
+
+alias cddev='cd /home/tsan2/appli/dev'
+alias cdprod='cd /home/tsan2/appli/prod'
+alias cdtest='cd /home/tsan2/appli/test'
+
+alias cdweb='cd /home/tsan2/appli/web'
+
+alias cdbroc='cd /home/i21660o/prod-ansible/brocade'
+alias cdrole='cd /home/i21660o/prod-ansible/common_roles'
+alias cdawx='cd /home/i21660o/prod-ansible/awx_deploy'
+alias inityml='/home/i21660o/mytestproject/inityml.sh'
+alias suroot='/opt/seos/bin/sesudo SU-'
+
+alias s3="aws s3 --endpoint-url $S3_DEV --no-verify-ssl"
+
+# dev : https://s3.unix-int.intra-int.bdf-int.local :10443
+alias s3dev="aws s3 --endpoint-url $S3_DEV --no-verify-ssl"
+alias s3apidev="aws s3api --endpoint-url $S3_DEV:10443 --no-verify-ssl"
+alias s3iamdev="aws iam --endpoint-url $S3_DEV:10443 --no-verify-ssl"
+
+# prod: https://s3auto-api.pr01.stocobj.app.private
+alias s3prd="aws s3 --endpoint-url $S3_PRD:10443 --no-verify-ssl"
+alias s3apiprd="aws s3api --endpoint-url $S3_PRD:10443 --no-verify-ssl"
+alias s3iamprd="aws iam --endpoint-url $S3_PRD:10443 --no-verify-ssl"
+
+# Add git branch in bash prompt
+# source /usr/share/doc/git-$(git --version  | awk '{print $3}')/contrib/completion/git-prompt.sh
+source /usr/share/doc/git/contrib/completion/git-prompt.sh
+
+#PS1='\[\e[0m\][\[\e[0m\]\u\[\e[0m\]@\[\e[0m\]\h \[\e[0;1m\]\w \[\e[0m\]]\[\e[0m\]\$\[\e[0m\]'
+export PS1='$MyVM:\[\033[36m\]\u\[\033[m\]@\[\033[32m\] \[\033[33;1m\]\w\[\033[0;32m\]$(__git_ps1 " (%s)")\[\033[m\] \$ '
+
+# Source env python for ansible
+source /home/i21660o/venv/bin/activate
+
+#(venv) VM2:i21660o@ ~/dev_ansible/CFN/a2s_cfn_tsm (main) $

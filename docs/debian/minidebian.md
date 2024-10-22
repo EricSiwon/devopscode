@@ -41,3 +41,24 @@ python3 -m venv myvenv
 
 source ./myvenv/bin/activate
 ```
+
+### Confib .Bashrc
+
+```bash
+set-window-title() {
+  #echo -en "\033]0;$(pwd | sed -e "s;^$HOME;~;")\a"
+  echo -en "\033]0;$(pwd | sed -e "s;^/home/tsan2/appli/;~;")\a"
+}
+
+if [[ "$PROMPT_COMMAND" ]]; then
+  export PROMPT_COMMAND="$PROMPT_COMMAND;set-window-title"
+else
+  export PROMPT_COMMAND=set-window-title
+fi
+```
+
+### Le fichier bashrc
+
+```bash
+--8<-- "docs/files/bashrc"
+```
