@@ -9,7 +9,7 @@ nav:
           - ansible/memento/calcul.md
   - Proxmox:
       - proxmox/proxmox.md
-  - Debian: 
+  - Debian:
       - debian/minidebian.md
       - debian/installmkdocs.md
       - debian/githubpages.md
