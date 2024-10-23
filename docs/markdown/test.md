@@ -116,7 +116,8 @@
 --8<-- "docs/codesniped.txt"
 ```
 
---8<-- "docs/codesniped.txt"
+!!! note
+    "--8<-- "docs/codesniped.txt""
 
 ----
 

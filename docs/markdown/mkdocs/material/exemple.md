@@ -1,18 +1,20 @@
+# Exemple
+
 ---
-# Builtin values
+## Builtin values
 destination: Example.html
 
 flow: true
 sequence: true
 mathjax: true
 
-# Meta Data
+## Meta Data
 title: PyMdown Example
 author:
   - John Doe
   - Jane Doe
 
-# Settings overrides
+## Settings overrides
 pymdown_settings:
   template: example-template.html
   use_jinja2: true
@@ -138,7 +140,6 @@ title: This title will be overridden by YAML
         - having `guess_lang=False` allows selective highlighting of only the blocks that specify a language.  When omitted or set `true`, it can be expected that all of the blocks will be highlighted to some extent (in some cases very wrong).  `guess_lang` is disabled in this example.
         - pymdown.b64 can be verified by checking the source of one of the images to see if conversion occured.
 
-[TOC]
 
 ## Headers
 
@@ -153,17 +154,18 @@ title: This title will be overridden by YAML
 ### Duplicate Header
 ```
 
-# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
-### Duplicate Header
-### Duplicate Header
+!!! note
+    ## H2
+    ### H3
+    #### H4
+    ##### H5
+    ###### H6
+    ### Duplicate Header
+    ### Duplicate Header
+    ## Horizontal Rules
 
-## Horizontal Rules
 ```
+
 ---
 
 - - -
