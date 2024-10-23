@@ -1,0 +1,14 @@
+- hosts: localhost
+  gather_facts: false
+
+  vars:
+    my_number: "1"
+
+  tasks:
+    - name: Add + 1
+      ansible.builtin.set_fact:
+        new_number: "{{ my_number | int + 1 }}"
+
+    - name: Display
+      ansible.builtin.debug:
+        var: new_number
