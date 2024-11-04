@@ -7,12 +7,14 @@ nav:
           - ansible/configuration/index.md
       - Mémento:
           - ansible/memento/calcul.md
-  - Proxmox:
-      - proxmox/proxmox.md
-  - Debian:
-      - debian/minidebian.md
-      - debian/installmkdocs.md
-      - debian/githubpages.md
+          - ansible/memento/date.md
+  - Homelab:
+      - Proxmox:
+          - proxmox/proxmox.md
+      - Debian:
+          - debian/minidebian.md
+          - debian/installmkdocs.md
+          - debian/githubpages.md
   - Markdown:
       - markdown/syntax/syntax.md
       - markdown/syntax/material.md

@@ -123,3 +123,62 @@
 
 :smile: :heart: :thumbsup:
 
+| Method      | Description                          |
+| ----------- | ------------------------------------ |
+| `GET`       | :material-check:     Fetch resource  |
+| `PUT`       | :material-check-all: Update resource |
+| `DELETE`    | :material-close:     Delete resource |
+
+```text
+
+td,th{
+    border: 1px solid;
+  }
+
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+
+  .md-typeset__table{}
+
+  tr:nth-child(even) {background-color: #f2f2f2;}
+
+  tr:hover {background-color: coral;}
+
+p {
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+}
+
+
+.md-typeset table:not([class]) {
+  background-color: var(--md-default-bg-color);
+  border: .05rem solid var(--md-typeset-table-color);
+  border-radius: .1rem;
+  display: inline-block;
+  font-size: .64rem;
+  max-width: 100%;
+  overflow: auto;
+  touch-action: auto;
+}
+
+.md-typeset table:not([class]) td {
+  border-top: .05rem solid var(--md-typeset-table-color);
+  padding: .9375em 1.25em;
+  vertical-align: top;
+}
+
+  ```
+
+### Decoration Link Actif
+
+```
+  .md-nav__link--active{
+    border: solid;
+    border-width: 1px 1px 1px 1px;
+    border-radius: 5px;
+    background-color: #54a2e66b;
+  }
+```

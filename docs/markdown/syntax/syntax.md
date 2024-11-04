@@ -21,28 +21,34 @@ Avec l’éditeur WYSIWYG de [makeareadme](https://www.makeareadme.com/)
 
 ## {++Typographie++}
 
-### ==Mettre un mot en _italique_==
+### ==_italique_==
 
 > _en italique_ .Votre mot se trouve entre 1 `*astérisque*`  
 > ou  
 > _en italique_ .Votre mot se trouve entre 1 `_underscores_`
 
-### ==Mettre un mot en **en gras**==
+### ==**gras**==
 
 > **en gras** .Votre mot se trouve entre 2 `**astérisque**`  
 > ou  
 > **en gras** .Votre mot se trouve entre 2 `__underscores__`
 
-### ==Mettre un mot en _**en gras et en italique**_==
+### ==_**gras et italique**_==
 
-> _**en gras et en italique**_ . Utilisation conbinée de `_**astérisque et underscores`
+> _**en gras et en italique**_ . Utilisation conbinée de `_**astérisque et underscores**_`
 
-### ==Conserver un astérisque (*) ou un underscores (_)==
+### ==astérisque (*)==
 
- `\*astérisque*` ou `\_underscores_`
->
-> \*astérisque* => Placer un backslash devant `\*` `\*astérisque*`  
-> \_underscores_ => Placer un backslash devant `\_` `\_underscores_`
+ `\*astérisque*` 
+
+> Conserver un \*astérisque* => Placer un backslash devant `\*` `\*astérisque*`  
+
+
+### ==underscores (_)==
+
+ `\_underscores_`
+ 
+> Conserver un \_underscores_ => Placer un backslash devant `\_` `\_underscores_`
 
 ### ==Encadrer du texte==
 
@@ -57,7 +63,7 @@ Avec l’éditeur WYSIWYG de [makeareadme](https://www.makeareadme.com/)
 
 ### ==Aller à la ligne en fin de phrase==
 
-> Pour faire un  changement de ligne  
+> Pour faire un  changement de ligne`espaces espaces`  
 > Votre ligne doit se terminer par 2 `espaces`  
 
 !!! note ""
