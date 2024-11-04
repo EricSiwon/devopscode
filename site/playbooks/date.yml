@@ -1,0 +1,14 @@
+- hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: Make Date
+      ansible.builtin.set_fact:
+        date_current: "{{ '%Y%m%d-%H%M%S' | strftime  }}"
+        day_of_year:  "{{ '%Y%m%d' | strftime  }}"
+
+    - name: Display Date
+      ansible.builtin.debug:
+        msg:
+          - "date_current : {{ date_current }}"
+          - "day_of_year  : {{ day_of_year }}"

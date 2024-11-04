@@ -93,4 +93,10 @@
     border: solid;
     border-width: 1px 1px 1px 1px;
     border-radius: 5px;
+    background-color: #54a2e66b;
+  }
+
+  .md-typeset table:not([class]) td,th {
+    border: .05rem solid var(--md-typeset-table-color);
+  
   }
