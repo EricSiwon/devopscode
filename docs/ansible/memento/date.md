@@ -6,11 +6,11 @@
 
 > [Format Code List](https://kapeli.com/cheat_sheets/strftime_Format_Codes.docset/Contents/Resources/Documents/index)
 
-``` yaml title="Date" linenums="1" hl_lines="10"
+``` yaml title="Date" linenums="1" hl_lines="7-8"
 --8<-- "docs/playbooks/date.yml"
 ```
 
-``` text title="" hl_lines="3"
+``` text title="" hl_lines="4-5"
 TASK [Display Date] *************************
 ok: [localhost] => {
     "msg": [
