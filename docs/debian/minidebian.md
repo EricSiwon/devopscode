@@ -159,6 +159,15 @@ fi
 --8<-- "docs/files/bashrc"
 ```
 
+### Accès au NAS
+
+```bash
+apt-get install gvfs-backends
+apt-get install gvfs-fuse
+apt-get install gigolo
+```
+
+> Thunar: GO -> Browse Network
 
 ### 'apt-get update' failed: exit code 100
 

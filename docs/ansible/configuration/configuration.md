@@ -1,0 +1,6 @@
+# Configuration
+
+## ansible.cfg
+
+```yaml
+```
