@@ -34,3 +34,24 @@ sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/micros
 sudo apt-get update
 sudo apt-get install code # or code-insiders
 ```
+
+## Custom vsCode
+
+``` json title=".vscode.setting.json"
+--8<-- "docs/files/custom_vscode" 
+```
+
+``` json title=".vscode.setting.json"
+{
+    "ansible.python.interpreterPath": "/usr/bin/python",
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.renderFinalNewline": "on",
+    "editor.semanticHighlighting.enabled": true,
+    "ansible.ansible.path": "usr/bin/ansible",
+    "ansible.ansible.useFullyQualifiedCollectionNames": true,
+    "ansible.validation.lint.enabled": true,
+    "ansible.validation.lint.path": "/usr/bin/ansible-lint"
+}
+```

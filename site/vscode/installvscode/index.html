@@ -1005,6 +1005,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#custom-vscode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom vsCode
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1748,6 +1757,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#custom-vscode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom vsCode
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1791,6 +1809,22 @@ root@debiandesktop:~# sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/e
 </blockquote>
 <div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>code<span class="w"> </span><span class="c1"># or code-insiders</span>
+</span></code></pre></div>
+<h2 id="custom-vscode">Custom vsCode<a class="headerlink" href="#custom-vscode" title="Permanent link">&para;</a></h2>
+<div class="language-json highlight"><span class="filename">.vscode.setting.json</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="mi">--8</span><span class="err">&lt;</span><span class="mi">--</span><span class="w"> </span><span class="s2">&quot;docs/files/custom_vscode&quot;</span><span class="w"> </span>
+</span></code></pre></div>
+<div class="language-json highlight"><span class="filename">.vscode.setting.json</span><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">{</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="nt">&quot;ansible.python.interpreterPath&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/usr/bin/python&quot;</span><span class="p">,</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="nt">&quot;files.insertFinalNewline&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">    </span><span class="nt">&quot;files.trimFinalNewlines&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="nt">&quot;files.trimTrailingWhitespace&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">    </span><span class="nt">&quot;editor.renderFinalNewline&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;on&quot;</span><span class="p">,</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="nt">&quot;editor.semanticHighlighting.enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">    </span><span class="nt">&quot;ansible.ansible.path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;usr/bin/ansible&quot;</span><span class="p">,</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">    </span><span class="nt">&quot;ansible.ansible.useFullyQualifiedCollectionNames&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">    </span><span class="nt">&quot;ansible.validation.lint.enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">    </span><span class="nt">&quot;ansible.validation.lint.path&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/usr/bin/ansible-lint&quot;</span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="p">}</span>
 </span></code></pre></div>
 
 
