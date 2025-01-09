@@ -1,15 +1,15 @@
 # Installing Visual Studio Code
 
-## Installing package
+## Installing package VsCode via curl
 
-### curl
+### Get curl
 
 ```bash
 $ su -
 # apt-get install curl
 ```
 
-## Installing VsCode via apt
+### Installing
 
 > The proprietary repository and key can also be installed manually with the following script:
 
@@ -27,7 +27,6 @@ sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/micros
     root@debiandesktop:~# sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/keyrings/microsoft-archive-keyring.gpg  
     root@debiandesktop:~# sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/microsoft-archive-keyring.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/    vscode.list'
 
-
 > Then update the package cache and install the package using:
 
 ```bash
@@ -38,20 +37,5 @@ sudo apt-get install code # or code-insiders
 ## Custom vsCode
 
 ``` json title=".vscode.setting.json"
---8<-- "docs/files/custom_vscode" 
-```
-
-``` json title=".vscode.setting.json"
-{
-    "ansible.python.interpreterPath": "/usr/bin/python",
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true,
-    "files.trimTrailingWhitespace": true,
-    "editor.renderFinalNewline": "on",
-    "editor.semanticHighlighting.enabled": true,
-    "ansible.ansible.path": "usr/bin/ansible",
-    "ansible.ansible.useFullyQualifiedCollectionNames": true,
-    "ansible.validation.lint.enabled": true,
-    "ansible.validation.lint.path": "/usr/bin/ansible-lint"
-}
+--8<-- "docs/files/custom_vscode"
 ```

@@ -138,7 +138,7 @@ python3 -m venv myvenv
 source ./myvenv/bin/activate
 ```
 
-### Confib .Bashrc
+### Config .Bashrc (Setting windows title)
 
 ```bash
 set-window-title() {
