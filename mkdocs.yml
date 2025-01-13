@@ -1,6 +1,6 @@
 site_name: DevOpsCode.fs
 nav:
-  - Home: 
+  - Home:
     - index.md
   - Ansible:
       - ansible/configuration/installation.md
@@ -8,6 +8,10 @@ nav:
       - Mémento:
           - ansible/memento/calcul.md
           - ansible/memento/date.md
+          - ansible/memento/dictionary.md
+          - ansible/memento/file.md
+          - ansible/memento/builtin.md
+          - ansible/memento/vars.md
   - Homelab:
       - Proxmox:
           - proxmox/proxmox.md
@@ -39,7 +43,7 @@ nav:
           - markdown/mermaid/pie.md
           - markdown/mermaid/sequencediagram.md
   - About: about.md
-theme: 
+theme:
   #name: readthedocs
   name: material
   highlightjs: true

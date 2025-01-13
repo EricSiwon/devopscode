@@ -1,23 +1,60 @@
 
 # Material TEST !!!
 
+## [Link MARK](https://facelessuser.github.io/pymdown-extensions/extensions/critic/)
+
+## [Formating](https://squidfunk.github.io/mkdocs-material/reference/formatting/)
+
+## {++PLUS++}
+
+## {--MOINS--}
+
+## {==EGALE==}
+
+~~Delete~~
+
+## ProgressBar
+
 ```markdown
 [=55% "55%"]
+```
+
+[=55% "55%"]
+
+```markdown
 [=20% "20%"]{: .candystripe}
+```
+
+[=20% "20%"]{: .candystripe}
+
+```markdown
 [=55% "55%"]{: .candystripe}
+```
+
+[=55% "55%"]{: .candystripe}
+
+```markdown
 [=85% "85%"]{: .candystripe}
+```
+
+[=85% "85%"]{: .candystripe}
+
+```markdown
 [=100% "100%"]{: .candystripe .candystripe-animate}
+```
+
+[=100% "100%"]{: .candystripe .candystripe-animate}
+
+```markdown
 [=25%]{: .thin}
+```
+
+[=25%]{: .thin .candystripe}
+
+```markdown
 [=45%]{: .thin}
 ```
 
-
-[=55% "55%"]
-[=20% "20%"]{: .candystripe}
-[=55% "55%"]{: .candystripe}
-[=85% "85%"]{: .candystripe}
-[=100% "100%"]{: .candystripe .candystripe-animate}
-[=25%]{: .thin .candystripe}
 [=45%]{: .thin}
 
 ++ctrl+alt+delete++

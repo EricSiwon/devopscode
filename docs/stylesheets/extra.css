@@ -8,13 +8,13 @@
     white-space: nowrap;
     overflow: hidden;
   }
-  
+
   .progress-bar {
     height: 1.2rem;
     float: left;
     background-color: #2979ff;
   }
-  
+
   .progress.candystripe-animate .progress-bar {
       animation: animate-stripes 5s linear infinite;
   }
@@ -27,7 +27,7 @@
     background-color: #eeeeee;
     position: relative;
   }
-  
+
   @keyframes animate-stripes {
     0% {
       background-position: 0 0;
@@ -56,35 +56,35 @@
     margin-top: 0.9rem;
     height: 0.4rem;
   }
-  
+
   .progress.thin .progress-label {
     margin-top: -0.4rem;
   }
-  
+
   .progress.thin .progress-bar {
     height: 0.4rem;
   }
-  
+
   .progress-100plus .progress-bar {
     background-color: #00e676;
   }
-  
+
   .progress-80plus .progress-bar {
     background-color: #fbc02d;
   }
-  
+
   .progress-60plus .progress-bar {
     background-color: #ff9100;
   }
-  
+
   .progress-40plus .progress-bar {
     background-color: #ff5252;
   }
-  
+
   .progress-20plus .progress-bar {
     background-color: #ff1744;
   }
-  
+
   .progress-0plus .progress-bar {
     background-color: #f50057;
   }
@@ -97,8 +97,8 @@
   .md-nav__link--active {
     border: solid;
     border-width: 1px;
-    margin-left: 15px;
-    padding: 1px 1px 1px 15px; 
+    margin-left: 1px;
+    padding: 1px 1px 1px 3px;
     border-radius: 5px;
     background-color: #d9def8;
   }
@@ -127,7 +127,7 @@
   .md-typeset table:not([class]) tbody tr:hover {
     /* background:#a9a6c4; */
     cursor:pointer;
-  } 
+  }
 
   /*
   .md-typeset table:not([class]) th,tr:hover {

@@ -1,0 +1,22 @@
+- name: Dict2
+  hosts: localhost
+  gather_facts: false
+
+  vars:
+    save: "date_of_day"
+    day: "monday"
+    time: "11"
+
+  tasks:
+    - name: Create Dict
+      ansible.builtin.set_fact:
+        dict2: >-
+          {{
+            dict2 | default({})
+            | combine({  save : { 'jour' : day }}, recursive=True )
+            | combine({  save : { 'seq' : time }}, recursive=True )
+          }}
+
+    - name: Display Recursive
+      ansible.builtin.debug:
+        var: dict2

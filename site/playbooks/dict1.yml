@@ -1,0 +1,20 @@
+- name: Dict1
+  hosts: localhost
+  gather_facts: false
+
+  vars:
+    myvalue: "MyValue"
+
+  tasks:
+    - name: Append to Dictionary
+      ansible.builtin.set_fact:
+        dict1: >-
+          {{
+            dict1 | default({})
+            | combine({ "key1" : "value" })
+            | combine({ "key2" : myvalue })
+          }}
+
+    - name: Display Recursive
+      ansible.builtin.debug:
+        var: dict1

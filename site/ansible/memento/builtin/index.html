@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../installation/">
+        <link rel="prev" href="../file/">
       
       
-        <link rel="next" href="../../memento/calcul/">
+        <link rel="next" href="../vars/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Configuration - DevOpsCode.fs</title>
+        <title>Builtin - DevOpsCode.fs</title>
       
     
     
@@ -83,7 +83,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configuration" class="md-skip">
+        <a href="#builtin" class="md-skip">
           Skip to content
         </a>
       
@@ -119,7 +119,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configuration
+              Builtin
             
           </span>
         </div>
@@ -249,7 +249,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../installation/" class="md-tabs__link">
+        <a href="../../configuration/installation/" class="md-tabs__link">
           
   
     
@@ -485,11 +485,175 @@
   
   
     <li class="md-nav__item">
-      <a href="../installation/" class="md-nav__link">
+      <a href="../../configuration/installation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     Installation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../configuration/configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Mémento
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Mémento
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../calcul/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Calcul
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../date/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Date
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dictionary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dictionary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../file/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    File
   </span>
   
 
@@ -519,7 +683,7 @@
           
   
   <span class="md-ellipsis">
-    Configuration
+    Builtin
   </span>
   
 
@@ -530,7 +694,7 @@
         
   
   <span class="md-ellipsis">
-    Configuration
+    Builtin
   </span>
   
 
@@ -552,27 +716,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ansiblecfg" class="md-nav__link">
+  <a href="#meta" class="md-nav__link">
     <span class="md-ellipsis">
-      ansible.cfg
+      meta
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#launch-playbook-with-vaulted-files" class="md-nav__link">
+  <a href="#include_role" class="md-nav__link">
     <span class="md-ellipsis">
-      Launch Playbook with vaulted files
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#launch-playbook-with-configured-vault-password-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      Launch Playbook with configured vault password file
+      include_role
     </span>
   </a>
   
@@ -593,170 +748,8 @@
   
   
   
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-      
-      
-        
-          
-          
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
-    Mémento
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_3">
-            <span class="md-nav__icon md-icon"></span>
-            Mémento
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
     <li class="md-nav__item">
-      <a href="../../memento/calcul/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Calcul
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../memento/date/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Date
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../memento/dictionary/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Dictionary
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../memento/file/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    File
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../memento/builtin/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Builtin
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../memento/vars/" class="md-nav__link">
+      <a href="../vars/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1792,27 +1785,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ansiblecfg" class="md-nav__link">
+  <a href="#meta" class="md-nav__link">
     <span class="md-ellipsis">
-      ansible.cfg
+      meta
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#launch-playbook-with-vaulted-files" class="md-nav__link">
+  <a href="#include_role" class="md-nav__link">
     <span class="md-ellipsis">
-      Launch Playbook with vaulted files
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#launch-playbook-with-configured-vault-password-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      Launch Playbook with configured vault password file
+      include_role
     </span>
   </a>
   
@@ -1833,38 +1817,31 @@
                   
 
 
-<h1 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h1>
-<h2 id="ansiblecfg">ansible.cfg<a class="headerlink" href="#ansiblecfg" title="Permanent link">&para;</a></h2>
-<div class="language-ini highlight"><span class="filename">ansible.cfg</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">[defaults]</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="na">nocows</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">true</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="na">callbacks_enabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">ansible.posix.profile_tasks, ansible.posix.timer</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c1"># Use the YAML callback plugin.</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="na">stdout_callback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">yaml</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="c1"># stdout_callback = json</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="c1"># Use the stdout_callback when running ad-hoc commands.</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="c1"># bin_ansible_callbacks = True</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="c1"># For display stats in summary in section CUSTOM STATS</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="na">show_custom_stats</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">true</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="na">force_color</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">true</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="k">[color]</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="c1"># Change Color</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="na">skip</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;orange&quot;</span>
-</span></code></pre></div>
-<h2 id="launch-playbook-with-vaulted-files">Launch Playbook with vaulted files<a class="headerlink" href="#launch-playbook-with-vaulted-files" title="Permanent link">&para;</a></h2>
-<div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>ansible-playbook<span class="w"> </span>playbook.yml<span class="w">  </span>--ask-vault-password
-</span></code></pre></div>
-<h2 id="launch-playbook-with-configured-vault-password-file">Launch Playbook with configured vault password file<a class="headerlink" href="#launch-playbook-with-configured-vault-password-file" title="Permanent link">&para;</a></h2>
-<blockquote>
-<p>Need to put the password in user home directory in file</p>
-</blockquote>
-<div class="language-bash highlight"><span class="filename">Bash</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ANSIBLE_VAULT_PASSWORD_FILE</span><span class="o">=</span>~/.vault_password
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>ansible-playbook<span class="w"> </span>playbook.yml
+<h1 id="builtin">Builtin<a class="headerlink" href="#builtin" title="Permanent link">&para;</a></h1>
+<h2 id="meta">meta<a class="headerlink" href="#meta" title="Permanent link">&para;</a></h2>
+<p><a href="https://docs.ansible.com/ansible/latest/collections/ansible/builtin/meta_module.html">ansible.builtin.meta</a></p>
+<ul>
+<li>clear_facts</li>
+<li>clear_host_errors</li>
+<li>end_host</li>
+<li>end_play</li>
+<li>flush_handlers</li>
+<li>noop</li>
+<li>refresh_inventory</li>
+<li>reset_connection</li>
+<li>end_batch</li>
+</ul>
+<h2 id="include_role">include_role<a class="headerlink" href="#include_role" title="Permanent link">&para;</a></h2>
+<ul>
+<li>name</li>
+<li>tasks_from</li>
+</ul>
+<div class="language-yaml highlight"><span class="filename">YAML</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Init Role Vars | ZONING BULK</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">ansible.builtin.include_role</span><span class="p">:</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">      </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">zoning</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">      </span><span class="nt">tasks_from</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">zoning-bulk-0-init-playbook-vars.yml</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">    </span><span class="nt">vars</span><span class="p">:</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">      </span><span class="nt">step</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0</span>
 </span></code></pre></div>
 
 
@@ -1903,7 +1880,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../installation/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Installation">
+          <a href="../file/" class="md-footer__link md-footer__link--prev" aria-label="Previous: File">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1913,20 +1890,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Installation
+                File
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../memento/calcul/" class="md-footer__link md-footer__link--next" aria-label="Next: Calcul">
+          <a href="../vars/" class="md-footer__link md-footer__link--next" aria-label="Next: Vars">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Calcul
+                Vars
               </div>
             </div>
             <div class="md-footer__button md-icon">

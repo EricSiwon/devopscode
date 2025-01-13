@@ -1,0 +1,16 @@
+- name: Dict0
+  hosts: localhost
+  gather_facts: false
+
+  vars:
+    dict:
+      key1: "Value1"
+      key2: "Value2"
+      key3: "Value3"
+
+  tasks:
+
+    - name: Convert a dictionary into an itemized list of dictionaries
+      ansible.builtin.debug:
+        msg: "Key = item.key : {{ item.key }} , Value = item.value : {{ item.value }}"
+      loop: "{{ dict | dict2items }}"

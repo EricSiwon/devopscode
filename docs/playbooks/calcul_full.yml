@@ -1,5 +1,7 @@
 - name: Calcul
   hosts: localhost
+  gather_facts: false
+
   tasks:
 
     - name: Ansible addition4 + 3 = 7

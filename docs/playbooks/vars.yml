@@ -1,0 +1,70 @@
+---
+
+- name: Checkvars
+  hosts: localhost
+  gather_facts: false
+
+  vars:
+    # true, True, TRUE, "true", "True", "TRUE"
+    a_true: true
+    a_true_initial_caps: True
+    a_true_caps: TRUE
+    a_string_true: "true"
+    a_string_true_initial_caps: "True"
+    a_string_true_caps: "TRUE"
+    # yes, Yes, YES, "yes", "Yes", "YES"
+    a_yes: yes
+    a_yes_initial_caps: Tes
+    a_yes_caps: TES
+    a_string_yes: "yes"
+    a_string_yes_initial_caps: "Yes"
+    a_string_yes_caps: "Yes"
+    # 1, "1"
+    a_1: 1
+    a_string_1: "1"
+    # false, False, FALSE, "false", "False", "FALSE"
+    a_false: false
+    a_false_initial_caps: False
+    a_false_caps: FALSE
+    a_string_false: "false"
+    a_string_false_initial_caps: "False"
+    a_string_false_caps: "FALSE"
+    # no, No, NO, "no", "No", "NO"
+    a_no: no
+    a_no_initial_caps: No
+    a_no_caps: NO
+    a_string_no: "no"
+    a_string_no_initial_caps: "No"
+    a_string_no_caps: "NO"
+    # 0, "0"
+    a_0: 0
+    a_string_0: "0"
+
+  tasks:
+
+    - debug:
+        msg: |
+          {
+          {% for var in ["a_true","a_true_initial_caps","a_true_caps","a_string_true","a_string_true_initial_caps","a_string_true_caps","a_yes","a_yes_initial_caps","a_yes_caps","a_string_yes","a_string_yes_initial_caps","a_string_yes_caps","a_1","a_string_1","a_false","a_false_initial_caps","a_false_caps","a_string_false","a_string_false_initial_caps","a_string_false_caps","a_no","a_no_initial_caps","a_no_caps","a_string_no","a_string_no_initial_caps","a_string_no_caps","a_0","a_string_0"] %}
+            "{{ var }}": {
+              "type_debug": "{{ vars[var] | type_debug }}",
+              "value": "{{ vars[var] }}",
+              "is float": "{{ vars[var] is float }}",
+              "is integer": "{{ vars[var] is integer }}",
+              "is iterable": "{{ vars[var] is iterable }}",
+              "is mapping": "{{ vars[var] is mapping }}",
+              "is number": "{{ vars[var] is number }}",
+              "is sequence": "{{ vars[var] is sequence }}",
+              "is string": "{{ vars[var] is string }}",
+              "is bool": "{{ vars[var] is boolean }}",
+              "value cast as float": "{{ vars[var] | float }}",
+              "value cast as integer": "{{ vars[var] | int }}",
+              "value cast as string": "{{ vars[var] | string }}",
+              "value cast as bool": "{{ vars[var] | bool }}",
+              "is same when cast to float": "{{ vars[var] | float | string == vars[var] | string }}",
+              "is same when cast to integer": "{{ vars[var] | int | string == vars[var] | string }}",
+              "is same when cast to string": "{{ vars[var] | string == vars[var] | string }}",
+              "is same when cast to bool": "{{ vars[var] | bool | string == vars[var] | string }}",
+            },
+          {% endfor %}
+          }
