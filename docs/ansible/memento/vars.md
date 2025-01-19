@@ -21,7 +21,7 @@
 "{{ variable | mandatory }}"
 ```
 
-## Test if,then,else : ternary
+## Ternary : if,then,else
 
 > Si le test est à true, *restart* sinon *continue*
 
@@ -29,7 +29,7 @@
 "{{ (status == 'needs_restart') | ternary('restart', 'continue') }}"
 ```
 
-## Test if,then,else,null : ternary (omit)
+## Ternary : if,then,else,null : (omit)
 
 > Si le test est à true, *restart* sinon *continue* et *null* (omit) si status est non initialisé
 
