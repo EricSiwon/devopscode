@@ -6,11 +6,13 @@ nav:
       - ansible/configuration/installation.md
       - ansible/configuration/configuration.md
       - Mémento:
+          - ansible/memento/builtin.md
           - ansible/memento/calcul.md
           - ansible/memento/date.md
           - ansible/memento/dictionary.md
           - ansible/memento/file.md
-          - ansible/memento/builtin.md
+          - ansible/memento/lookup.md
+          - ansible/memento/loop.md
           - ansible/memento/vars.md
   - Homelab:
       - Proxmox:

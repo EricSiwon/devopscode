@@ -1,0 +1,30 @@
+- name: Loop 2
+  hosts: localhost
+  gather_facts: false
+  vars:
+    objs:
+      - key1: "directory1"
+        key2:
+          - "file11"
+          - "file12"
+      - key1: "directory2"
+        key2:
+          - "file21"
+          - "file22"
+  tasks:
+    - name: Create directories
+      ansible.builtin.debug:
+        msg: "Create directories : {{ item.key1 }}"
+      with_items: "{{ objs }}"
+
+    - name: 1 Create files
+      ansible.builtin.debug:
+        msg: "Create files : {{ item.0.key1 }}/{{ item.1 }}"
+      with_subelements:
+        - "{{ objs }}"
+        - key2
+
+    - name: 2 Create files
+      ansible.builtin.debug:
+        msg: "Create files : {{ item.0.key1 }}/{{ item.1 }}"
+      loop: "{{ objs | subelements('key2') }}"
