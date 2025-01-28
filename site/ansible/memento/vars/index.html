@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../builtin/">
+        <link rel="prev" href="../loop/">
       
       
         <link rel="next" href="../../../proxmox/proxmox/">
@@ -543,6 +543,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -578,6 +582,27 @@
             Mémento
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../builtin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Builtin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -670,11 +695,32 @@
   
   
     <li class="md-nav__item">
-      <a href="../builtin/" class="md-nav__link">
+      <a href="../lookup/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Builtin
+    lookup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../loop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loops
   </span>
   
 
@@ -764,18 +810,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#test-ifthenelse-ternary" class="md-nav__link">
+  <a href="#ternary-ifthenelse" class="md-nav__link">
     <span class="md-ellipsis">
-      Test if,then,else : ternary
+      Ternary : if,then,else
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#test-ifthenelsenull-ternary-omit" class="md-nav__link">
+  <a href="#ternary-ifthenelsenull-omit" class="md-nav__link">
     <span class="md-ellipsis">
-      Test if,then,else,null : ternary (omit)
+      Ternary : if,then,else,null : (omit)
     </span>
   </a>
   
@@ -1848,18 +1894,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#test-ifthenelse-ternary" class="md-nav__link">
+  <a href="#ternary-ifthenelse" class="md-nav__link">
     <span class="md-ellipsis">
-      Test if,then,else : ternary
+      Ternary : if,then,else
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#test-ifthenelsenull-ternary-omit" class="md-nav__link">
+  <a href="#ternary-ifthenelsenull-omit" class="md-nav__link">
     <span class="md-ellipsis">
-      Test if,then,else,null : ternary (omit)
+      Ternary : if,then,else,null : (omit)
     </span>
   </a>
   
@@ -1903,13 +1949,13 @@
 <h2 id="mandatory-variables">Mandatory Variables<a class="headerlink" href="#mandatory-variables" title="Permanent link">&para;</a></h2>
 <div class="language-yaml highlight"><span class="filename">YAML</span><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="s">&quot;{{</span><span class="nv"> </span><span class="s">variable</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">mandatory</span><span class="nv"> </span><span class="s">}}&quot;</span>
 </span></code></pre></div>
-<h2 id="test-ifthenelse-ternary">Test if,then,else : ternary<a class="headerlink" href="#test-ifthenelse-ternary" title="Permanent link">&para;</a></h2>
+<h2 id="ternary-ifthenelse">Ternary : if,then,else<a class="headerlink" href="#ternary-ifthenelse" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>Si le test est à true, <em>restart</em> sinon <em>continue</em></p>
 </blockquote>
 <div class="language-yaml highlight"><span class="filename">YAML</span><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="s">&quot;{{</span><span class="nv"> </span><span class="s">(status</span><span class="nv"> </span><span class="s">==</span><span class="nv"> </span><span class="s">&#39;needs_restart&#39;)</span><span class="nv"> </span><span class="s">|</span><span class="nv"> </span><span class="s">ternary(&#39;restart&#39;,</span><span class="nv"> </span><span class="s">&#39;continue&#39;)</span><span class="nv"> </span><span class="s">}}&quot;</span>
 </span></code></pre></div>
-<h2 id="test-ifthenelsenull-ternary-omit">Test if,then,else,null : ternary (omit)<a class="headerlink" href="#test-ifthenelsenull-ternary-omit" title="Permanent link">&para;</a></h2>
+<h2 id="ternary-ifthenelsenull-omit">Ternary : if,then,else,null : (omit)<a class="headerlink" href="#ternary-ifthenelsenull-omit" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>Si le test est à true, <em>restart</em> sinon <em>continue</em> et <em>null</em> (omit) si status est non initialisé</p>
 </blockquote>
@@ -2659,7 +2705,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../builtin/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Builtin">
+          <a href="../loop/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Loops">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2669,7 +2715,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Builtin
+                Loops
               </div>
             </div>
           </a>
