@@ -62,20 +62,22 @@ Les icons se trouve dans le repertoire : [Icons](https://github.com/squidfunk/mk
 
 ### Utilisation
 
+:material-information-slab-box-outline:
+
 !!! tip  ""
     Material Design --> :material-information-slab-box-outline:
     ``` title=""
-    :material-information-slab-box-outline:  
+    :material-information-slab-box-outline:
     ```
-    Octicons --> :octicons-rocket-24:  
+    Octicons --> :octicons-rocket-24:
     ``` title=""
     :octicons-rocket-24:
     ```
-    FontAwesome --> :fontawesome-solid-info:  
+    FontAwesome --> :fontawesome-solid-info:
     ``` title=""
     :fontawesome-solid-info:
     ```
-    Simple Icons --> :simple-flux:  
+    Simple Icons --> :simple-flux:
     ``` title=""
     :simple-flux:
     ```
@@ -85,61 +87,61 @@ Les icons se trouve dans le repertoire : [Icons](https://github.com/squidfunk/mk
 Visiter la documentation officielle: [Avertissements](https://squidfunk.github.io/mkdocs-material/reference/admonitions/){ .md-button }
 
 !!! note
-    Je suis une note ..... bla bla  
+    Je suis une note ..... bla bla
     bla bla
 
 ```markdown
 
 !!! note
-    Je suis une note ..... bla bla  
+    Je suis une note ..... bla bla
     bla bla
 ```
 
 [=0%]{: .thin}
 
 !!! note ""
-    Je suis une note sans titre ..... bla bla  
+    Je suis une note sans titre ..... bla bla
     bla bla
 
 ```markdown
 !!! note ""
-    Je suis une note sans titre ..... bla bla  
+    Je suis une note sans titre ..... bla bla
     bla bla
 ```
 
 [=0%]{: .thin}
 
 !!! note "mon titre"
-    Je suis une note avec titre ..... bla bla  
+    Je suis une note avec titre ..... bla bla
     bla bla
 
 ```markdown
 !!! note "mon titre"
-    Je suis une note avec titre ..... bla bla  
+    Je suis une note avec titre ..... bla bla
     bla bla
 ```
 
 [=0%]{: .thin}
 
 ??? note "Message non deployé"
-    Je suis une note non deployée ..... bla bla  bla bla 
+    Je suis une note non deployée ..... bla bla  bla bla
     bla bla
 
 ```markdown
 ??? note "Message non deployé"
-    Je suis une note non deployée ..... bla bla  bla bla 
+    Je suis une note non deployée ..... bla bla  bla bla
     bla bla
 ```
 
 [=0%]{: .thin}
 
 ???+ note "Message deployé"
-    Je suis une note deployée ..... bla bla  bla bla 
+    Je suis une note deployée ..... bla bla  bla bla
     bla bla
 
 ```markdown
 ???+ note "Message deployé"
-    Je suis une note deployée ..... bla bla  bla bla 
+    Je suis une note deployée ..... bla bla  bla bla
     bla bla
 ```
 
@@ -270,6 +272,40 @@ Visiter la documentation officielle: [Footnotes](https://squidfunk.github.io/mkd
 ## ==Formatting==
 
 Visiter la documentation officielle: [Formatting](https://squidfunk.github.io/mkdocs-material/reference/formatting/){ .md-button }
+
+[PyMdown Extensions Documentation `Critic`](https://facelessuser.github.io/pymdown-extensions/extensions/critic/)
+
+[Material Official Text Formating](https://squidfunk.github.io/mkdocs-material/reference/formatting/)
+
+```markdown
+{{++++PLUS++++}}
+```
+
+{++PLUS++}
+
+```markdown
+{{----MOINS----}}
+```
+
+{--MOINS--}
+
+```markdown
+{{====EGALE====}}
+```
+
+{==EGALE==}
+
+```markdown
+~~Delete~~
+```
+
+~~Delete~~
+
+```markdown
+^^souligné^^
+```
+
+^^souligné^^
 
 ## ==Grids==
 

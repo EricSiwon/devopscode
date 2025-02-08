@@ -10,6 +10,7 @@ nav:
           - ansible/memento/calcul.md
           - ansible/memento/date.md
           - ansible/memento/dictionary.md
+          - ansible/memento/error.md
           - ansible/memento/file.md
           - ansible/memento/lookup.md
           - ansible/memento/loop.md
@@ -19,7 +20,9 @@ nav:
           - proxmox/proxmox.md
       - Debian:
           - debian/minidebian.md
+      - Mkdoc:
           - debian/installmkdocs.md
+      - Github:
           - debian/githubpages.md
       - VsCode:
           - vscode/installvscode.md
@@ -44,6 +47,10 @@ nav:
           - markdown/mermaid/journey.md
           - markdown/mermaid/pie.md
           - markdown/mermaid/sequencediagram.md
+  - Code:
+      - code/ASCII_Encoding_Reference.md
+      - code/URL_Encoding_Reference.md
+      - code/Encodage_Html.md
   - About: about.md
 theme:
   #name: readthedocs

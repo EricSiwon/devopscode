@@ -1,17 +1,12 @@
 
 # Material TEST !!!
 
-## [Link MARK](https://facelessuser.github.io/pymdown-extensions/extensions/critic/)
 
-## [Formating](https://squidfunk.github.io/mkdocs-material/reference/formatting/)
 
-## {++PLUS++}
+## Text Formating
 
-## {--MOINS--}
 
-## {==EGALE==}
 
-~~Delete~~
 
 ## ProgressBar
 
@@ -46,7 +41,7 @@
 [=100% "100%"]{: .candystripe .candystripe-animate}
 
 ```markdown
-[=25%]{: .thin}
+[=25%]{: .thin .candystripe}
 ```
 
 [=25%]{: .thin .candystripe}
@@ -57,9 +52,23 @@
 
 [=45%]{: .thin}
 
+## Touche clavier
+
+```markdown
+++ctrl+alt+delete++
+```
+
 ++ctrl+alt+delete++
 
+```markdown
 ++ctrl++
+```
+
+++ctrl++
+
+```markdown
+++shift++
+```
 
 ++shift++
 
