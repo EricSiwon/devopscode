@@ -1,4 +1,4 @@
-.progress-label {
+  .progress-label {
     position: absolute;
     text-align: center;
     font-weight: 700;
@@ -107,6 +107,14 @@
   .md-typeset table:not([class]) {
     line-height: 1;
   } */
+
+  .md-button {
+    line-height: 0.8;
+  }
+
+  :root .twemoji {
+    --md-icon-size: 2em;
+  }
 
   .md-typeset table:not([class]) td,th {
     border: .05rem solid var(--md-typeset-table-color);

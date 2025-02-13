@@ -20,6 +20,8 @@ nav:
           - proxmox/proxmox.md
       - Debian:
           - debian/minidebian.md
+      - RedHat:
+          - redhat/xfcexrdpredhat.md
       - Mkdoc:
           - debian/installmkdocs.md
       - Github:
