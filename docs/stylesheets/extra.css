@@ -109,11 +109,11 @@
   } */
 
   .md-button {
-    line-height: 0.8;
+    line-height: 0.5;
   }
 
   :root .twemoji {
-    --md-icon-size: 2em;
+    --md-icon-size: 1em;
   }
 
   .md-typeset table:not([class]) td,th {

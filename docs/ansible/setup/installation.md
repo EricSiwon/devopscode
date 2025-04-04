@@ -1,6 +1,8 @@
 # Installation
 
-``` bash 
+
+
+``` bash
 python -m virtualenv ansible
 source ansible/bin/activate
 pip install ansible

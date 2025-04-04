@@ -3,60 +3,59 @@ nav:
   - Home:
     - index.md
   - Ansible:
-      - ansible/configuration/installation.md
-      - ansible/configuration/configuration.md
-      - Mémento:
-          - ansible/memento/builtin.md
-          - ansible/memento/calcul.md
-          - ansible/memento/date.md
-          - ansible/memento/dictionary.md
-          - ansible/memento/error.md
-          - ansible/memento/file.md
-          - ansible/memento/lookup.md
-          - ansible/memento/loop.md
-          - ansible/memento/vars.md
+    - Setup:
+      - Installation: ansible/setup/installation.md
+      - Configuration: ansible/setup/configuration.md
+    - Mémento:
+      - Array: ansible/memento/array.md
+      - Builtin: ansible/memento/builtin.md
+      - Calcul: ansible/memento/calcul.md
+      - Date: ansible/memento/date.md
+      - Dictionnary: ansible/memento/dictionary.md
+      - Error: ansible/memento/error.md
+      - File: ansible/memento/file.md
+      - Lookup: ansible/memento/lookup.md
+      - Loop: ansible/memento/loop.md
+      - Vars: ansible/memento/vars.md
   - Homelab:
-      - Proxmox:
-          - proxmox/proxmox.md
-      - Debian:
-          - debian/minidebian.md
-      - RedHat:
-          - redhat/xfcexrdpredhat.md
-      - Mkdoc:
-          - debian/installmkdocs.md
-      - Github:
-          - debian/githubpages.md
-      - VsCode:
-          - vscode/installvscode.md
+    - Proxmox: proxmox/proxmox.md
+    - Debian: debian/minidebian.md
+    - RedHat: redhat/xfcexrdpredhat.md
+    - Mkdoc: debian/installmkdocs.md
+    - Github: debian/githubpages.md
+    - VsCode: vscode/installvscode.md
   - Markdown:
-      - markdown/syntax/syntax.md
-      - markdown/syntax/material.md
-      - markdown/test.md
-      - Mkdocs:
-        - Configuration:
-          - markdown/mkdocs/configuration/index.md
-        - Theme Material for Mkdocs:
-          - markdown/mkdocs/material/configuration/mkdocs.md
-          - markdown/mkdocs/material/configuration/extracss.md
-          - markdown/mkdocs/material/exemple.md
-      - Mermaid:
-        - Exemples:
-          - markdown/mermaid/graph.md
-          - markdown/mermaid/flowchart.md
-          - markdown/mermaid/gitgraph.md
-          - markdown/mermaid/erdiagram.md
-          - markdown/mermaid/gantt.md
-          - markdown/mermaid/journey.md
-          - markdown/mermaid/pie.md
-          - markdown/mermaid/sequencediagram.md
+    - Syntax:
+      - Markdown: markdown/syntax/syntax.md
+      - Material Theme:  markdown/syntax/material.md
+      - Tests: markdown/syntax/test.md
+    - Mkdocs:
+      - Configuration:
+        - markdown/mkdocs/configuration/index.md
+      - Theme Material for Mkdocs:
+        - markdown/mkdocs/material/configuration/icons.md
+        - markdown/mkdocs/material/configuration/mkdocs.md
+        - markdown/mkdocs/material/configuration/extracss.md
+        - markdown/mkdocs/material/exemple.md
+    - Mermaid:
+      - Exemples:
+        - markdown/mermaid/graph.md
+        - markdown/mermaid/flowchart.md
+        - markdown/mermaid/gitgraph.md
+        - markdown/mermaid/erdiagram.md
+        - markdown/mermaid/gantt.md
+        - markdown/mermaid/journey.md
+        - markdown/mermaid/pie.md
+        - markdown/mermaid/sequencediagram.md
   - Code:
-      - code/ASCII_Encoding_Reference.md
-      - code/URL_Encoding_Reference.md
-      - code/Encodage_Html.md
+    - code/ASCII_Encoding_Reference.md
+    - code/URL_Encoding_Reference.md
+    - code/Encodage_Html.md
   - About: about.md
 theme:
   #name: readthedocs
   name: material
+  custom_dir: material/overrides
   highlightjs: true
   hljs_languages:
     - yaml
@@ -98,7 +97,7 @@ theme:
     - navigation.instant.progress
     # - navigation.instant.prefetch
     # - navigation.prune
-    - navigation.sections
+    # - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
@@ -163,8 +162,12 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
 plugins:
+  # - tags
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - glightbox
 extra_css:
   - stylesheets/extra.css
+
+hooks:
+  - material/overrides/hooks/shortcodes.py

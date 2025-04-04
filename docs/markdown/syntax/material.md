@@ -1,4 +1,4 @@
-# Syntax Material
+# Syntax Material Theme
 
 > THEME Material pour MKDOCS
 
@@ -90,7 +90,7 @@ Visiter la documentation officielle: [Avertissements](https://squidfunk.github.i
     Je suis une note ..... bla bla
     bla bla
 
-```markdown
+``` markdown
 
 !!! note
     Je suis une note ..... bla bla
@@ -103,7 +103,7 @@ Visiter la documentation officielle: [Avertissements](https://squidfunk.github.i
     Je suis une note sans titre ..... bla bla
     bla bla
 
-```markdown
+``` markdown
 !!! note ""
     Je suis une note sans titre ..... bla bla
     bla bla
