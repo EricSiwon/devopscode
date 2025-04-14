@@ -39,6 +39,7 @@ nav:
         - markdown/mkdocs/material/exemple.md
     - Mermaid:
       - Exemples:
+        - markdown/mermaid/testV11.md
         - markdown/mermaid/graph.md
         - markdown/mermaid/flowchart.md
         - markdown/mermaid/gitgraph.md
