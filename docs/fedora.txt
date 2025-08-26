@@ -1,0 +1,28 @@
+eric@fedora:~$ ls /boot
+config-6.14.5-300.fc42.x86_64
+config-6.14.9-300.fc42.x86_64
+config-6.15.10-200.fc42.x86_64
+efi
+grub2
+initramfs-0-rescue-832be5c5ee2b45daa514ed4c55dda090.img
+initramfs-6.14.9-300.fc42.x86_64.img
+loader
+lost+found
+symvers-6.14.5-300.fc42.x86_64.xz
+symvers-6.14.9-300.fc42.x86_64.xz
+symvers-6.15.10-200.fc42.x86_64.xz
+System.map-6.14.5-300.fc42.x86_64
+System.map-6.14.9-300.fc42.x86_64
+System.map-6.15.10-200.fc42.x86_64
+vmlinuz-0-rescue-832be5c5ee2b45daa514ed4c55dda090
+vmlinuz-6.14.5-300.fc42.x86_64
+vmlinuz-6.14.9-300.fc42.x86_64
+vmlinuz-6.15.10-200.fc42.x86_64
+eric@fedora:~$ sudo dracu initramfs-6.15.10-200.fc42.x86_64.img 6.15.10-200.fc42.x86_64
+Placez votre doigt sur le lecteur d’empreintes
+
+cd /boot
+
+sudo dracut initramfs-6.15.10-200.fc42.x86_64.img 6.15.10-200.fc42.x86_64
+
+grub2-mkconfig -o /boot/grub2/grub.cfg
